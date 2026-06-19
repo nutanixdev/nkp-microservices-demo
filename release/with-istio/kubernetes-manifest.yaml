@@ -629,7 +629,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: redis:alpine
+        image: public.ecr.aws/docker/library/redis:8.8.0-alpine3.23
         ports:
         - containerPort: 6379
         readinessProbe:
