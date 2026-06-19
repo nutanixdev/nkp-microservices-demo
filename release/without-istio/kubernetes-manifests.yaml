@@ -49,7 +49,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/emailservice:v0.10.2
+        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/emailservice:v0.10.5
         ports:
         - containerPort: 8080
         env:
@@ -123,7 +123,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: us-central1-docker.pkg.dev/google-samples/microservices-demo/checkoutservice:v0.10.2
+          image: us-central1-docker.pkg.dev/google-samples/microservices-demo/checkoutservice:v0.10.5
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -206,7 +206,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/recommendationservice:v0.10.2
+        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/recommendationservice:v0.10.5
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -284,7 +284,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: us-central1-docker.pkg.dev/google-samples/microservices-demo/frontend:v0.10.2
+          image: us-central1-docker.pkg.dev/google-samples/microservices-demo/frontend:v0.10.5
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -411,7 +411,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/paymentservice:v0.10.2
+        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/paymentservice:v0.10.5
         ports:
         - containerPort: 50051
         env:
@@ -484,7 +484,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/productcatalogservice:v0.10.2
+        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/productcatalogservice:v0.10.5
         ports:
         - containerPort: 3550
         env:
@@ -557,7 +557,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/cartservice:v0.10.2
+        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/cartservice:v0.10.5
         ports:
         - containerPort: 7070
         env:
@@ -629,7 +629,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: redis:alpine
+        image: public.ecr.aws/docker/library/redis:8.8.0-alpine3.23
         ports:
         - containerPort: 6379
         readinessProbe:
@@ -740,7 +740,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/loadgenerator:v0.10.2
+        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/loadgenerator:v0.10.5
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -792,7 +792,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/currencyservice:v0.10.2
+        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/currencyservice:v0.10.5
         ports:
         - name: grpc
           containerPort: 7000
@@ -865,7 +865,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/shippingservice:v0.10.2
+        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/shippingservice:v0.10.5
         ports:
         - containerPort: 50051
         env:
@@ -939,7 +939,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/adservice:v0.10.2
+        image: us-central1-docker.pkg.dev/google-samples/microservices-demo/adservice:v0.10.5
         ports:
         - containerPort: 9555
         env:
